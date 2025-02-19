@@ -16,7 +16,7 @@ big hardware.
 You can see an example of how to generate with DeepSeek from a cloud terminal in the screen recording above 
 (8x speed up).
 
-Do drop me hit the ⭐ button if you've enjoyed reading this technical article! 
+Hit the ⭐ button if you've enjoyed reading this technical article! 
 
 You can also read this article on the ZL Labs [website](https://zl-labs.tech/post/2025-02-15-run-deepseek/).
 
