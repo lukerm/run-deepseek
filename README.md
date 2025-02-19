@@ -1,4 +1,4 @@
-## Run DeepSeek on AWS
+# DeepSeek in the Cloud
 
 ![Run Generation](demo/deepseek-generate.gif)
 
