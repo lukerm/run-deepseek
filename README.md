@@ -160,7 +160,7 @@ This article walks you through how to run a DeepSeek model in the cloud (specifi
 steps including which machine image to use, the type of instance to rent, and how to download the model weights in double
 quick time.
 
-If you enjoyed reading it, please hit the ⭐ button on my GitHub [page](https://github.com/lukerm/run-deepseek).
+If you enjoyed reading it, please hit the ⭐ button above!
 
 
 ### Appendix: Step 1a - Build AMI
