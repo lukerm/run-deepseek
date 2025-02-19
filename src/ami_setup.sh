@@ -17,25 +17,26 @@
 # Note: you need about 30GB volume
 # Use a g5.[2]xlarge (~$1 per hour)
 
-# <<< AMI START: Ubuntu 22.04 Server >>>
+# <<< AMI START: Ubuntu 24.04 Server >>>
 
 sudo apt update
 sudo apt -y upgrade
-
-sudo apt install -y awscli
 
 # following: https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202
 # nvidia drivers
 sudo apt autoremove nvidia* --purge
 sudo apt install -y ubuntu-drivers-common
 sudo ubuntu-drivers devices
-sudo apt install -y nvidia-driver-525  # note: exact number (525) can change (check recommended version from `ubuntu-drivers devices`)
-# Note: 525.xx is compatible with CUDA 12.0
+sudo apt install -y nvidia-driver-550  # note: exact number (550) can change (check recommended version from `ubuntu-drivers devices`)
+# Note: 525.xx is compatible with CUDA 12.4
 sudo reboot
 nvidia-smi
 
+sudo snap install aws-cli --classic
+
 # python + dependencies
 sudo apt install -y python3 python3-pip
+python3 -m pip config set global.break-system-packages true  # required for system-wide installs (pip 23.0+)
 pip install torch torchvision transformers
 pip install accelerate hf_transfer
 pip install gpustat
