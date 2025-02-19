@@ -14,7 +14,7 @@
 #
 """
 Example usage:
-$ python3 -u src/run_prompt.py --prompt "Do any two people in London have the same number of hairs on their heads?"
+$ python3 -u src/run_prompt_stream.py --prompt "Do any two people in London have the same number of hairs on their heads?"
 """
 import argparse
 import threading
