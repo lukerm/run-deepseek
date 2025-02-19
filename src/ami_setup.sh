@@ -28,7 +28,7 @@ sudo apt autoremove nvidia* --purge
 sudo apt install -y ubuntu-drivers-common
 sudo ubuntu-drivers devices
 sudo apt install -y nvidia-driver-550  # note: exact number (550) can change (check recommended version from `ubuntu-drivers devices`)
-# Note: 525.xx is compatible with CUDA 12.4
+# Note: 550.xx is compatible with CUDA 12.4
 sudo reboot
 nvidia-smi
 
